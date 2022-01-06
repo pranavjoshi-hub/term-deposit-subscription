@@ -4,39 +4,46 @@
 * Built a classification model to predict whether or not clients will subscribe to a term deposit facilitated by a banking institution
 
 ## Code & Resources Used
-Jupyter Notebooks: Python 3  
-Packages: pandas, numpy, sklearn, matplotlib, seaborn  
-Data Source: https://www.kaggle.com/gowthamchowdry/bank-classifying-term-deposit-subscriptions/data  
+**Jupyter Notebooks**: Python 3  
+**Packages**: pandas, numpy, sklearn, matplotlib, seaborn  
+**Data Source**: https://www.kaggle.com/gowthamchowdry/bank-classifying-term-deposit-subscriptions/data  
 
 ## Data Cleaning
 After fetching the data, I needed to clean it up so that it can be used for building the classification model.
 The cleaning process involved the following tasks.  
 * Dealt with the missing values
-* Changed data-type of columns
-* Dealth with outliers
+* Dealt with outliers
 * Removed column for month of last contact
 
 ## EDA
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights.  
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights.    
+![](https://github.com/pranavjoshi-hub/term-deposit-subscription/blob/main/visualizations/job_type_counts.png
+)
+![](https://github.com/pranavjoshi-hub/term-deposit-subscription/blob/main/visualizations/heat_map.png)
+![](https://github.com/pranavjoshi-hub/term-deposit-subscription/blob/main/visualizations/prediction_by_education.png)
 
 ## Model Building
-First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.
+First, I transformed the categorical variables into dummy variables. I scaled the numeric features to a standard range. I also split the data into train and test sets with a test size of 20%.
 
 I tried three different models and evaluated them using R2.
 
-I tried three different models:
+Following are the three models I tried:
 
-Gaussian Naive Bayes  
-Logistic Regression  
-K-Nearest Neighbours 
+1. Gaussian Naive Bayes  
+2. Logistic Regression  
+3. K-Nearest Neighbours 
 
 ## Model Performance
 The Logistic Regression model outperformed the Gaussian Naive Bayes model by some distance and the KNN model only marginally.  
-1. Baseline Model Performance:  
-**Gaussian Naive-Bayes** - 85.9%    
-**Logistic Regression** - 89.4%  
-**K-Nearest Neighbors** - 89%    
+a. Baseline Model Performance:  
+i. **Gaussian Naive-Bayes** - 85.9%    
+ii. **Logistic Regression** - 89.4%  
+iii. **K-Nearest Neighbors** - 89%    
 
-2. Optimized Model Performance:  
-**Logistic Regression** - 89.4%  
-**K-Nearest Neighbors** - 89.3%  
+b. Optimized Model Performance:  
+i. **Logistic Regression** - 89.4%  
+ii. **K-Nearest Neighbors** - 89.3%  
+
+## Project Results
+* The model shall enable the bank during promotional campaigns to identify and focus on potential clients who are predicted to subscribe to the term deposit.
+* The model could help the bank save at least 30% on promotional expenses.
