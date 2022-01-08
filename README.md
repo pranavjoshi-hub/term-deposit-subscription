@@ -1,19 +1,19 @@
 # Term Deposit Subscription: Project Overview
 * Cleaned data, performed exploratory analysis and did some feature engineering
-* Optimized Logistic Regression & K-Nearest Neighbors using GridSearchCV to reach the best model
+* Optimized Logistic Regression & K-Nearest Neighbours using GridSearchCV to reach the best model
 * Built a classification model to predict whether or not clients will subscribe to a term deposit facilitated by a banking institution
 
 ## Code & Resources Used
-**Jupyter Notebooks**: Python 3  
-**Packages**: pandas, numpy, sklearn, matplotlib, seaborn  
-**Data Source**: https://www.kaggle.com/gowthamchowdry/bank-classifying-term-deposit-subscriptions/data  
+* **Jupyter Notebooks**: Python 3  
+* **Packages**: pandas, numpy, sklearn, matplotlib, seaborn  
+* **Data Source**: https://www.kaggle.com/gowthamchowdry/bank-classifying-term-deposit-subscriptions/data  
 
 ## Data Cleaning
 After fetching the data, I needed to clean it up so that it can be used for building the classification model.
 The cleaning process involved the following tasks.  
 * Dealt with the missing values
 * Dealt with outliers
-* Removed column for month of last contact
+* Removed the column for month of last contact
 
 ## EDA
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights.    
@@ -34,15 +34,10 @@ Following are the three models I tried:
 3. K-Nearest Neighbours 
 
 ## Model Performance
-The Logistic Regression model outperformed the Gaussian Naive Bayes model by some distance and the KNN model only marginally.  
-a. Baseline Model Performance:  
-i. **Gaussian Naive-Bayes** - 85.9%    
-ii. **Logistic Regression** - 89.4%  
-iii. **K-Nearest Neighbors** - 89%    
+The Logistic Regression model outperformed the Gaussian Naive Bayes model by some distance and the KNN model only marginally. Therefore, I optimized the Logistic Regression and KNN models to get the following results.
 
-b. Optimized Model Performance:  
-i. **Logistic Regression** - 89.4%  
-ii. **K-Nearest Neighbors** - 89.3%  
+1. Logistic Regression - **89.4%** 
+2. K-Nearest Neighbours - **89.3%** 
 
 ## Project Results
 * The model shall enable the bank during promotional campaigns to identify and focus on potential clients who are predicted to subscribe to the term deposit.
