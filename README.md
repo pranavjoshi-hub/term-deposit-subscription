@@ -1,8 +1,8 @@
 # Term Deposit Subscription Classifier: Project Overview
-* Cleaned the data
+* Cleaned and prepared the data
 * Performed exploratory data analysis and some feature engineering
 * Optimized Logistic Regression & K-Nearest Neighbours using GridSearchCV to reach the best model
-* Built a classification model to predict whether or not clients will subscribe to a term deposit facilitated by a banking institution
+* Built a classification model to predict whether clients will subscribe to a term deposit facilitated by a banking institution
 
 ## Code & Resources Used
 * **Jupyter Notebooks**: Python 3  
