@@ -1,4 +1,4 @@
-# Term Deposit Subscription: Project Overview
+# Term Deposit Subscription Classifier: Project Overview
 * Cleaned the data
 * Performed exploratory data analysis and some feature engineering
 * Optimized Logistic Regression & K-Nearest Neighbours using GridSearchCV to reach the best model
