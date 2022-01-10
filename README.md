@@ -41,5 +41,5 @@ The Logistic Regression model outperformed the Gaussian Naive Bayes model by som
 2. K-Nearest Neighbours - **89.3%** 
 
 ## Project Results
-* The model shall enable the bank during promotional campaigns to identify and focus on potential clients who are predicted to subscribe to the term deposit.
-* The model could help the bank save at least 30% on promotional expenses.
+* The classification model shall enable the bank during promotional campaigns to identify and focus on potential clients who are predicted to subscribe to the term deposit.
+* The model could help the bank save at least 30% on promotional expenditure.
